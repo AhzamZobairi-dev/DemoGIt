@@ -1,0 +1,148 @@
+THIS IS A VERY SENSITIVE FILE THAT HAS SSH KEY   
+
+
+                                             ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (trial)
+$ git checkout master
+Switched to branch 'master'
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git remote add origin https://github.com/AhzamZobairi-dev/Git-in-one-video.git
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git remote
+origin
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git remote -v
+origin  https://github.com/AhzamZobairi-dev/Git-in-one-video.git (fetch)
+origin  https://github.com/AhzamZobairi-dev/Git-in-one-video.git (push)
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git push origin master
+
+
+
+
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git host.name
+git: 'host.name' is not a git command. See 'git --help'.
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git config --global email
+error: key does not contain a section: email
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git config --global user.email
+Ahzamzobairi402@gmail.com
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ ssh-keygen -t ed25519 -C "ahzamzobairi402@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/ahzam/.ssh/id_ed25519):
+Created directory '/c/Users/ahzam/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/ahzam/.ssh/id_ed25519
+Your public key has been saved in /c/Users/ahzam/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:cbtWSnfdwWeHq6F6gq6reaU4az9m+6P+cwgoBzbq9lg ahzamzobairi402@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|               + |
+|              .. |
+|        . .   .o+|
+|.o       o .   +=|
+|o...    S o + o o|
+|o o . .  . * +   |
+|.o E + o  = .    |
+| o*.* = oo.      |
+|.o=@BX++.o       |
++----[SHA256]-----+
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 1645
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ ssh-add ~/.ssh/id_rsa
+/c/Users/ahzam/.ssh/id_rsa: No such file or directory
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ ssh-add ~/.ssh
+Error loading key "/c/Users/ahzam/.ssh": Is a directory
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ ssh-add ~/.ssh/id_ed25519
+Identity added: /c/Users/ahzam/.ssh/id_ed25519 (ahzamzobairi402@gmail.com)
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ cat ~/.ssh/id_ed25519.pub
+cat: ''$'\302\226''/.ssh/id_ed25519.pub': No such file or directory
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ cat /.ssh/id_ed25519
+cat: ''$'\302\226''/.ssh/id_ed25519': No such file or directory
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ cat ~/.ssh/id_ed25519.pub9
+cat: ''$'\302\226''~/.ssh/id_ed2551.pub9': No such file or directory
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ cat ~/.ssh/id_ed25519.pub
+cat: ''$'\302\226''~/.ssh/id_ed25519.pub': No such file or directory
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ cat ~/.ssh/id_ed25519
+cat: ''$'\302\226''~/.ssh/id_ed25519': No such file or directory
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ cat /c/Users/ahzam/.ssh/id_ed25519
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACAvdQt+tO3tpP21Paq97w/yJyjF3jF3fpWXZc/Vyc4yGQAAAKDHhQjSx4UI
+0gAAAAtzc2gtZWQyNTUxOQAAACAvdQt+tO3tpP21Paq97w/yJyjF3jF3fpWXZc/Vyc4yGQ
+AAAECLr+Is25o2mzIUH8FU7DtgtZBHu8buOpCZK/tuxCOaoy91C3607e2k/bU9qr3vD/In
+KMXeMXd+lZdlz9XJzjIZAAAAGWFoemFtem9iYWlyaTQwMkBnbWFpbC5jb20BAgME+aDd
+-----END OPENSSH PRIVATE KEY-----
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ cat /c/Users/ahzam/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC91C3607e2k/bU9qr3vD/InKMXeMXd+lZdlz9XJzjIZ+aDd ahzamzobairi402@gmail.com
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git push origin master
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (24/24), 3.66 KiB | 937.00 KiB/s, done.
+Total 24 (delta 10), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (10/10), done.
+To https://github.com/AhzamZobairi-dev/Git-in-one-video.git
+ * [new branch]      master -> master
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git branch
+* master
+  trial
+
+                                                 ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (master)
+$ git checkout trial
+Switched to branch 'trial'
+
+                                                ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (trial)
+$ git push -u origin trial
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'trial' on GitHub by visiting:
+remote:      https://github.com/AhzamZobairi-dev/Git-in-one-video/pull/new/trial
+remote:
+To https://github.com/AhzamZobairi-dev/Git-in-one-video.git
+ * [new branch]      trial -> trial
+branch 'trial' set up to track 'origin/trial'.
+
+                                                ahzam@Ahzam_laptop MINGW64 ~/Desktop/100 days of code (trial)
+$
+
+
